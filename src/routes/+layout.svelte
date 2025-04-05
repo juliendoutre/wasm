@@ -18,6 +18,7 @@
     import "../app.css";
 
     let { children } = $props();
+    let activeUrl = $derived(page.url.pathname);
 </script>
 
 <Navbar class="px-2 sm:px-4 py-2.5 w-full z-20 top-0 start-0 border-b">
@@ -50,11 +51,11 @@
     </div>
 </Navbar>
 
-<Sidebar>
+<Sidebar {activeUrl}>
     <SidebarWrapper>
         <SidebarGroup>
             <SidebarItem label="Welcome" href={base}></SidebarItem>
-            <SidebarItem label="Level 1" href={base + "level1"}></SidebarItem>
+            <SidebarItem label="Level 1" href={`${base}/level1`}></SidebarItem>
         </SidebarGroup>
     </SidebarWrapper>
 </Sidebar>
