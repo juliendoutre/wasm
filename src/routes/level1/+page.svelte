@@ -2,9 +2,7 @@
     import { Heading, P } from "flowbite-svelte";
 </script>
 
-<Heading class="p-8" tag="h1" customSize="text-3xl"
-    >Web Assembly Reverse Engineering Challenge</Heading
->
+<Heading class="p-8" tag="h1" customSize="text-3xl">Level 1</Heading>
 
 <P class="px-8 py-4">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
