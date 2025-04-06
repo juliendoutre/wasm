@@ -29,7 +29,7 @@
 
 <Hr />
 
-<Heading class="p-8" tag="h3">Frequently asked questions</Heading>
+<Heading class="p-8" tag="h2">Frequently asked questions</Heading>
 
 <P class="px-8 py-4" weight="bold">Can I publish answers?</P>
 <P class="px-8 py-4">Sure, I don't mind if you do!</P>
