@@ -51,7 +51,7 @@
     </div>
 </Navbar>
 
-<div class="overflow-scroll pb-16 mt-28">
+<div class="overflow-scroll pb-16 mt-20">
     <Sidebar {activeUrl} asideClass="w-54">
         <SidebarWrapper
             divClass="overflow-y-auto py-4 px-3 rounded dark:bg-gray-800"
@@ -65,11 +65,12 @@
     </Sidebar>
 
     <div class="flex px-4 mx-auto w-full">
-        <main class="lg:ml-72 w-full mx-auto">
+        <main class="lg:ml-46 w-full mx-auto mr-10">
             {@render children?.()}
         </main>
     </div>
 </div>
+
 <Footer footerType="logo">
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <FooterCopyright

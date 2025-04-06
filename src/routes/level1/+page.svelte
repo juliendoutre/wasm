@@ -11,6 +11,8 @@
     > should contain intereting tools for you to use.</P
 >
 
-<Alert color="blue">
-    This level's hash is: <code>{hash()}</code>
-</Alert>
+<P class="px-8 py-4">
+    <Alert color="blue">
+        This level's hash is: <code>{hash()}</code>
+    </Alert>
+</P>
