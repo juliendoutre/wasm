@@ -52,20 +52,20 @@
 </Navbar>
 
 <div class="overflow-scroll pb-16 mt-20">
-    <Sidebar {activeUrl} asideClass="w-54 fixed">
-        <SidebarWrapper
-            divClass="overflow-y-auto py-4 px-3 rounded dark:bg-gray-800"
-        >
-            <SidebarGroup>
-                <SidebarItem label="Welcome" href={base}></SidebarItem>
-                <SidebarItem label="Level 1" href={`${base}/level1`}
-                ></SidebarItem>
-            </SidebarGroup>
-        </SidebarWrapper>
-    </Sidebar>
-
     <div class="flex px-4 mx-auto w-full">
-        <main class="lg:ml-46 w-full mx-auto mr-10">
+        <Sidebar {activeUrl} asideClass="w-54 fixed">
+            <SidebarWrapper
+                divClass="overflow-y-auto py-4 px-3 rounded dark:bg-gray-800"
+            >
+                <SidebarGroup>
+                    <SidebarItem label="Welcome" href={base}></SidebarItem>
+                    <SidebarItem label="Level 1" href={`${base}/level1`}
+                    ></SidebarItem>
+                </SidebarGroup>
+            </SidebarWrapper>
+        </Sidebar>
+
+        <main class="ml-52 w-full mx-auto mr-10">
             {@render children?.()}
         </main>
     </div>
