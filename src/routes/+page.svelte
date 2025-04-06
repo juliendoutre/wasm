@@ -2,13 +2,12 @@
     import { Heading, P, A, Hr } from "flowbite-svelte";
 </script>
 
-<Heading class="p-8" tag="h1"
-    >Web Assembly Reverse Engineering Challenge</Heading
+<Heading class="p-8" tag="h1">WebAssembly Reverse Engineering Challenge</Heading
 >
 
 <P class="px-8 py-4">
     This website contains hacking challenges involving reverse engineering of <A
-        href="https://webassembly.org/">Web Assembly</A
+        href="https://webassembly.org/">WebAssembly</A
     > programs.
 </P>
 

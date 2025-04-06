@@ -1,16 +1,16 @@
 <script>
-    import { Heading, P } from "flowbite-svelte";
+    import { Heading, P, A, Alert } from "flowbite-svelte";
+    import { hash } from "$lib/levels/level1";
 </script>
 
-<Heading class="p-8" tag="h1" customSize="text-3xl">Level 1</Heading>
+<Heading class="p-8" tag="h1">Level 1</Heading>
 
-<P class="px-8 py-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Amet cursus sit amet
-    dictum sit. Quis enim lobortis scelerisque fermentum dui faucibus in. Mattis
-    vulputate enim nulla aliquet porttitor lacus luctus accumsan. Ipsum dolor
-    sit amet consectetur adipiscing elit. Euismod nisi porta lorem mollis
-    aliquam ut porttitor. Tortor consequat id porta nibh. Tortor condimentum
-    lacinia quis vel eros donec ac odio. Elementum sagittis vitae et leo duis ut
-    diam quam nulla. Vel turpis nunc eget lorem.
-</P>
+<P class="px-8 py-4"
+    >This is a warm-up. The <A href="https://github.com/WebAssembly/wabt"
+        >WebAssembly Binary Toolkit</A
+    > should contain intereting tools for you to use.</P
+>
+
+<Alert color="blue">
+    This level's hash is: <code>{hash()}</code>
+</Alert>
