@@ -21,7 +21,7 @@
     let activeUrl = $derived(page.url.pathname);
 </script>
 
-<Navbar class="px-2 sm:px-4 py-2.5 w-full z-20 top-0 start-0 border-b">
+<Navbar class="px-2 sm:px-4 py-2.5 w-full z-20 top-0 start-0 border-b fixed">
     <NavBrand href={base}>
         <span
             class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
@@ -51,21 +51,25 @@
     </div>
 </Navbar>
 
-<Sidebar {activeUrl}>
-    <SidebarWrapper>
-        <SidebarGroup>
-            <SidebarItem label="Welcome" href={base}></SidebarItem>
-            <SidebarItem label="Level 1" href={`${base}/level1`}></SidebarItem>
-        </SidebarGroup>
-    </SidebarWrapper>
-</Sidebar>
+<div class="overflow-scroll pb-16 mt-28">
+    <Sidebar {activeUrl} asideClass="w-54">
+        <SidebarWrapper
+            divClass="overflow-y-auto py-4 px-3 rounded dark:bg-gray-800"
+        >
+            <SidebarGroup>
+                <SidebarItem label="Welcome" href={base}></SidebarItem>
+                <SidebarItem label="Level 1" href={`${base}/level1`}
+                ></SidebarItem>
+            </SidebarGroup>
+        </SidebarWrapper>
+    </Sidebar>
 
-<div class="flex px-4 mx-auto w-full">
-    <main class="lg:ml-72 w-full mx-auto">
-        {@render children?.()}
-    </main>
+    <div class="flex px-4 mx-auto w-full">
+        <main class="lg:ml-72 w-full mx-auto">
+            {@render children?.()}
+        </main>
+    </div>
 </div>
-
 <Footer footerType="logo">
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <FooterCopyright

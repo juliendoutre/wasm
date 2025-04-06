@@ -1,5 +1,6 @@
 <script>
-    import { Heading, P, A, Hr } from "flowbite-svelte";
+    import { Heading, P, A, Hr, Button } from "flowbite-svelte";
+    import { base } from "$app/paths";
 </script>
 
 <Heading class="p-8" tag="h1">WebAssembly Reverse Engineering Challenge</Heading
@@ -19,6 +20,12 @@
     follow the <code>flag{"{"}...{"}"}</code> format. You can easily check if your
     guess is correct as you have access to the answer's hash.
 </P>
+
+<div class="basis-1/4 flex flex-col items-center justify-center">
+    <Button href={`${base}/level1`} color="light"
+        >Get started with level1!</Button
+    >
+</div>
 
 <Hr />
 
