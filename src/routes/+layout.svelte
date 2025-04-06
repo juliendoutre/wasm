@@ -52,7 +52,7 @@
 </Navbar>
 
 <div class="overflow-scroll pb-16 mt-20">
-    <Sidebar {activeUrl} asideClass="w-54">
+    <Sidebar {activeUrl} asideClass="w-54 fixed">
         <SidebarWrapper
             divClass="overflow-y-auto py-4 px-3 rounded dark:bg-gray-800"
         >
