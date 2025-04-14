@@ -20,7 +20,7 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
-		"flowbite-svelte": "^0.48.4",
+		"flowbite-svelte": "^0.48.6",
 		"flowbite-svelte-icons": "^2.0.2",
 		"tailwindcss": "^4.1.3"
 	}
