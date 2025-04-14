@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"flowbite-svelte": "^0.48.4",
-		"flowbite-svelte-icons": "^2.0.2",
+		"flowbite-svelte-icons": "^2.1.1",
 		"tailwindcss": "^4.1.3"
 	}
 }
