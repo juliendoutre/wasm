@@ -8,5 +8,5 @@ https://juliendoutre.github.io/warec/
 
 ```shell
 npm install tailwindcss @tailwindcss/cli
-npx @tailwindcss/cli -i ./src/index.css -o ./src/index.css
+npx @tailwindcss/cli -i ./src/index.css -o ./public/index.css
 ```
