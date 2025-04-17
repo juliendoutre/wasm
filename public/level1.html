@@ -15,6 +15,15 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <script src="./wasm_exec.js"></script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("./level1.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+            var levelHash = document.getElementById('level-hash');
+            levelHash.innerHTML = hash();
+        });
+    </script>
 </head>
 
 <body>
@@ -142,7 +151,7 @@
             </p>
             <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
                 role="alert">
-                <span class="font-medium">This level's hash is: </span> <code>TODO</code>
+                <span class="font-medium">This level's hash is: </span> <code id="level-hash"></code>
             </div>
         </div>
 
