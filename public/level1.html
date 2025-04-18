@@ -27,13 +27,13 @@
 </head>
 
 <body>
-    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start rtl:justify-end">
                     <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
                         aria-controls="logo-sidebar" type="button"
-                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
                         <span class="sr-only">Open sidebar</span>
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -49,12 +49,12 @@
                 <div class="flex items-center">
                     <div class="flex items-center ms-3">
                         <ul
-                            class="font-medium flex flex-col p-0 border border-gray-100 rounded-lg flex-row rtl:space-x-reverse mt-0 border-0 bg-white dark:bg-gray-800 dark:border-gray-700">
+                            class="font-medium flex flex-col p-0 border border-gray-100 rounded-lg flex-row rtl:space-x-reverse mt-0 border-0 bg-white">
                             <li>
                                 <a href="https://github.com/juliendoutre/warec" aria-current="page"
                                     data-tooltip-target="tooltip-github"
-                                    class="text-gray-900 hover:bg-gray-200 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:text-gray-500 dark:hover:text-white dark:focus:ring-gray-800 dark:hover:bg-gray-500">
-                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    class="text-gray-900 hover:bg-gray-200 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2">
+                                    <svg class="w-6 h-6 text-gray-800" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path fill-rule="evenodd"
@@ -64,14 +64,14 @@
                                     <span class="sr-only">Github</span>
                                 </a>
                                 <div id="tooltip-github" role="tooltip"
-                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip">
                                     View on GitHub
                                     <div class="tooltip-arrow" data-popper-arrow></div>
                                 </div>
                             </li>
                             <li>
                                 <button id="theme-toggle" type="button" data-tooltip-target="tooltip-darkmode"
-                                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                                    class="text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5">
                                     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
@@ -86,7 +86,7 @@
                                     </svg>
                                 </button>
                                 <div id="tooltip-darkmode" role="tooltip"
-                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip">
                                     Toggle dark mode
                                     <div class="tooltip-arrow" data-popper-arrow></div>
                                 </div>
@@ -99,15 +99,15 @@
     </nav>
 
     <aside id="logo-sidebar"
-        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0"
         aria-label="Sidebar">
-        <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+        <div class="h-full px-3 pb-4 overflow-y-auto bg-white">
             <ul class="space-y-2 font-medium">
                 <li>
                     <a href="./index.html"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
                         </svg>
@@ -115,22 +115,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./faq.html"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <a href="./faq.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.529 9.988a2.502 2.502 0 1 1 5 .191A2.441 2.441 0 0 1 12 12.582V14m-.01 3.008H12M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
                         <span class="ms-3">FAQ</span>
                     </a>
                 </li>
-                <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+                <hr class="h-px my-8 bg-gray-200 border-0">
                 <li>
                     <a href="./level1.html"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
                         </svg>
@@ -142,23 +141,22 @@
     </aside>
 
     <div class="p-4 sm:ml-64">
-        <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
+        <div class="p-4 rounded-lg mt-14">
             <h2 class="text-2xl font-extrabold">Level 1</h2>
-            <p class="mb-4 text-lg text-gray-500 dark:text-gray-400">
+            <p class="mb-4 text-lg text-gray-500">
                 This is a warm-up. The <a href="https://github.com/juliendoutre/warec/issues"
-                    class="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">WebAssembly
+                    class="font-medium text-blue-600 underline hover:text-blue-700 hover:no-underline">WebAssembly
                     Binary Toolkit</a> should contain intereting tools for you to use.
             </p>
-            <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
-                role="alert">
+            <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert">
                 <span class="font-medium">This level's hash is: </span> <code id="level-hash"></code>
             </div>
         </div>
 
-        <footer class="col-span-full bg-white dark:bg-gray-900 m-4">
+        <footer class="col-span-full bg-white m-4">
             <div class="w-full max-w-screen-xl mx-auto p-4 py-8">
-                <hr class="my-8 border-gray-200 dark:border-gray-700" />
-                <span class="block text-sm text-gray-500 text-center dark:text-gray-400">Made with ❤️ in Paris and
+                <hr class="my-8 border-gray-200" />
+                <span class="block text-sm text-gray-500 text-center">Made with ❤️ in Paris and
                     hosted on <a href="https://pages.github.com/" class="hover:underline">GitHub Pages</a></span>
             </div>
         </footer>
