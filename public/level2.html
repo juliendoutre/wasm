@@ -15,6 +15,15 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <script src="./wasm_exec.js"></script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("./level2.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+            var levelHash = document.getElementById('level-hash');
+            levelHash.innerHTML = hash();
+        });
+    </script>
 </head>
 
 <body>
@@ -145,31 +154,13 @@
 
     <div class="p-4 sm:ml-64">
         <div class="p-4 rounded-lg mt-14">
-            <h2 class="text-2xl font-extrabold">Frequently Asked Questions</h2>
-            <p class="my-4 text-lg text-gray-500">
-                <strong class="font-semibold text-gray-900">Can I publish answers?</strong>
+            <h2 class="text-2xl font-extrabold">Level 2</h2>
+            <p class="mb-4 text-lg text-gray-500">
+                TODO
             </p>
-            <p class="mb-4 text-lg font-normal text-gray-500">
-                Sure, I don't mind if you do!
-            </p>
-            <p class="my-4 text-lg text-gray-500">
-                <strong class="font-semibold text-gray-900">I found a bug and I'd like to report
-                    it</strong>
-            </p>
-            <p class="mb-4 text-lg font-normal text-gray-500">
-                Feel free to <a href="https://github.com/juliendoutre/warec/issues"
-                    class="font-medium text-blue-600 underline hover:text-blue-700 hover:no-underline">open
-                    an
-                    issue</a> on the GitHub
-                repository hosting this website source code 🙏
-            </p>
-            <p class="my-4 text-lg text-gray-500">
-                <strong class="font-semibold text-gray-900">I'd like to propose a new
-                    challenge!</strong>
-            </p>
-            <p class="mb-4 text-lg font-normal text-gray-500">
-                I definitely accept ideas for new levels! Please send me an email at jul.doutre@gmail.com.
-            </p>
+            <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50" role="alert">
+                <span class="font-medium">This level's hash is: </span> <code id="level-hash"></code>
+            </div>
         </div>
 
         <footer class="col-span-full bg-white m-4">
