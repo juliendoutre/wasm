@@ -3,6 +3,6 @@
   "private": true,
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.4",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.6"
   }
 }
